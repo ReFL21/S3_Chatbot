@@ -1,0 +1,181 @@
+.open-button {
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  position: fixed;
+  min-height: 80%;
+  min-width: 400px;
+  max-width: 400px;
+  bottom: 0;
+  right: 5px;
+  border: 3px solid #663366;
+  z-index: 9;
+  display: flex;
+  flex-flow: column;
+  border-radius: 9px;
+}
+
+.content-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.header-container {
+  flex: 0 1 auto;
+}
+
+.dialogue-container {
+  height: 0.95vh;
+  padding: 5px;
+  flex: 1 1 auto;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.action-container {
+  padding: 5px;
+  display: flex;
+  flex: 0 1 40px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  height: 100%;
+  padding: 0px;
+  background-color: white;
+  flex: 1 1 auto;
+  display: flex;
+  border-radius: 9px;
+  border: 0px solid transparent;
+}
+
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 330px;
+  height: 100%;
+  padding: 5px;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 8px !important;
+}
+
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  width: 50px;
+  opacity: 0.8;
+  top: 0;
+  margin-left: 5px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.topnav {
+  background-color: #663366;
+  overflow: hidden;
+  flex: 0 1 auto;
+  color: #f2f2f2;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav close {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav close:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.user-message {
+  background-color: #4f8f85;
+  color: white;
+  color: white;
+  font-size: 80%;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  min-width: 20%;
+  max-width: 80%;
+  width: fit-content;
+
+
+  margin-left: auto;
+  margin-right: 0%;
+
+}
+
+.bot-message {
+  background-color: #663366;
+  color: white;
+  font-size: 80%;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  min-width: 20%;
+  max-width: 80%;
+  width: fit-content;
+
+
+  white-space: pre-line;
+  margin-right: auto;
+  margin-left: 0;
+
+}
+
+.langContent {
+  position: absolute;
+  top: 10%;
+  left: 0.5%;
+}

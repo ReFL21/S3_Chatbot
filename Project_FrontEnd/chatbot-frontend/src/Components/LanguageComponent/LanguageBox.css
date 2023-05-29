@@ -1,0 +1,18 @@
+.langBoxContainer{
+    margin-top: 10px;
+    min-width: 350px;
+    min-height: 50px;
+  width:fit-content;
+  white-space: pre-line;
+  margin-right:auto;
+  text-align: center;
+    border-bottom: black 1px solid;
+}
+
+.langSelectionBtn{
+    background-color: #663366;
+    border-radius: 25%;
+    min-height: 30px;
+    min-width: 30px;
+    float: right;   
+  }

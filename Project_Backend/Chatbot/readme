@@ -1,0 +1,7 @@
+How to setup docker
+1. docker network create docker_network_chatbot
+2. docker run --net docker_network_chatbot --name docker_db_chatbot -e MYSQL_ROOT_PASSWORD=00000000 -p 3390:3306 -d mysql
+3. create the sheme/database inside of the last docker container
+4. docker build -t chatbot-backend .
+5. docker run -d -p 8090:8080 --net=docker_network_chatbot --env spring_profiles_active=staging --name=chatbot-backend-staging chatbot-backend
+6. backend should be running

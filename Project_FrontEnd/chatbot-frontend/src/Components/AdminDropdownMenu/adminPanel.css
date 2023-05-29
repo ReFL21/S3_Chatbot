@@ -1,0 +1,42 @@
+.nodeValueText{
+    margin-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+.card-body{
+    display:grid;   
+}
+.card-body{
+    min-width: 410px;
+}
+
+.btn-warning{
+    margin-left: 10px;
+    width:50px;
+    border-radius: 9px;
+    height:30px;
+    float:center;
+}
+.button-holder{
+    align-items: center;
+}
+.btn-light{
+    width:70px;
+    border-radius: 9px;
+    height:30px;
+}
+.btn-collapsed{
+    word-wrap: break-word;
+    background-color: transparent;
+    color: black;
+}
+
+Button{
+    min-width: 50px;
+    width:auto;
+}
+
+.moreBtn{
+    min-width: 320px;
+    
+    word-wrap: break-word;
+}
